@@ -1,14 +1,17 @@
-﻿using System.Web.Security;
+﻿using asp_mvc_2.Security;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 using asp_mvc_2.Models.ViewModel;
 using asp_mvc_2.Models.EntityManager;
-using System.Web.Mvc;
-using asp_mvc_2.Security;
+using System.Web.Security;
 
-namespace asp_mvc_2.Controllers
+namespace asp_mvc_4.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         public ActionResult Index()
         {
             return View();
@@ -79,4 +82,5 @@ string firstName, string lastName, string gender, int roleID = 0)
             return Json(new { success = true });
         }
     }
+
 }
